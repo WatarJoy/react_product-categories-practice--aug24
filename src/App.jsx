@@ -133,8 +133,7 @@ export const App = () => {
               <a
                 href="#/"
                 data-cy="AllCategories"
-                className={classNames('button mr-6', {
-                  'is-success': selectedCategories.length === 0,
+                className={classNames('button mr-6', 'is-success', {
                   'is-outlined': selectedCategories.length > 0,
                 })}
                 onClick={() => setSelectedCategories([])} // Clear all selected categories
